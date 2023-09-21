@@ -1,0 +1,61 @@
+<div class="faq-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Frequently Asked <span>Question</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="faq-accordion">
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <div class="accordion-header" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                What’s the difference between a college and a university?
+                            </div>
+                            <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <p>Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                What are the different types of undergraduate degrees?
+                            </div>
+                            <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <p>Associate: a two-year program that either leads to a specific vocation or transitions to a bachelor program. Bachelor: a four or five-year program where students earn credits in a wide variety of courses.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                What are the different types of graduate degrees?
+                            </div>
+                            <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <p>Masters: two-year degree providing additional specialization. Doctorate: five to eight-year program certifying the student as a trained research scholar and/or professor.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                Can you work while studying in the United States?
+                            </div>
+                            <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <p>With permission of the International Student Office, international students may work on campus up to 20 hours/week their first year and can apply to work off-campus in subsequent years.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                What is distance education?
+                            </div>
+                            <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <p>Distance education occurs when a student and an instructor are in different places. Learning occurs by mail, telephone, internet, or by other means.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="faq-image">
+                    <img src="assets/img/faq-img.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
