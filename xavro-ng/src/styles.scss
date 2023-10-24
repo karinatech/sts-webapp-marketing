@@ -1172,7 +1172,7 @@ CTA Area CSS
     position: relative;
     z-index: 1;
     background: {
-        image: url(assets/img/ctr-bg.jpg);
+        image: url(assets/img/data-center.png);
         position: center center;
         size: cover;
         repeat: no-repeat;
@@ -1186,7 +1186,7 @@ CTA Area CSS
         width: 100%;
         height: 100%;
         background: var(--blackColor);
-        opacity: .60;
+        opacity: .03;
     }
 }
 .cta-content {
@@ -1199,7 +1199,7 @@ CTA Area CSS
             display: none;
         }
         h2 {
-            color: var(--whiteColor);
+            color: var(--mainColor);
             font-weight: 600;
             margin: {
                 top: 25px;
@@ -1207,8 +1207,8 @@ CTA Area CSS
             };
         }
         p {
-            color: var(--whiteColor);
-            opacity: .95;
+            color: var(--blackColor);
+            opacity: .99;
             margin: {
                 left: auto;
                 right: auto;
