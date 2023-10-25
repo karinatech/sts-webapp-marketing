@@ -8,7 +8,7 @@ import { CountUpModule } from 'ngx-countup';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 // import {TabsModule} from 'ngx-tabset';
 import { TooltipModule } from 'ng2-tooltip-directive';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/common/preloader/preloader.component';
@@ -62,7 +62,8 @@ import { DemoSidebarComponent } from './components/common/demo-sidebar/demo-side
         HomeTwelveComponent,
         HomeThirteenComponent,
         BlogDetailsComponent,
-        DemoSidebarComponent,
+        DemoSidebarComponent
+
     ],
     imports: [
         BrowserModule,
@@ -73,7 +74,8 @@ import { DemoSidebarComponent } from './components/common/demo-sidebar/demo-side
         FormsModule,
         CountUpModule,
         TooltipModule,
-        NgxTypedJsModule
+        NgxTypedJsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
