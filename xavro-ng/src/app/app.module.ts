@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CountUpModule } from 'ngx-countup';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 // import {TabsModule} from 'ngx-tabset';
 import { TooltipModule } from 'ng2-tooltip-directive';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/common/preloader/preloader.component';
@@ -35,6 +35,8 @@ import { HomeTwelveComponent } from './components/home-twelve/home-twelve.compon
 import { HomeThirteenComponent } from './components/home-thirteen/home-thirteen.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { DemoSidebarComponent } from './components/common/demo-sidebar/demo-sidebar.component';
+import {ContactUsService} from "./services/contact-us/contact-us.service";
+import {ApplicationHttpClient, applicationHttpClientCreator} from "./services/application-http-client.service";
 
 @NgModule({
     declarations: [
@@ -75,9 +77,16 @@ import { DemoSidebarComponent } from './components/common/demo-sidebar/demo-side
         CountUpModule,
         TooltipModule,
         NgxTypedJsModule,
-        HttpClientModule
+        HttpClientModule,
+        ReactiveFormsModule
     ],
-    providers: [],
+    providers: [
+        {
+            provide: ApplicationHttpClient,
+            useFactory: applicationHttpClientCreator,
+            deps: [HttpClient]
+        },
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

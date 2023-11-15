@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    CONTACT_US_ENDPOINT: 'https://syp7w71ax8.execute-api.us-west-2.amazonaws.com/prod/ContactUs',
+    API_KEY: 'HBoeWTuLDH7S85F2XAo259lf17kZqrkL1JTfyPs5',
 };
 
 /*
