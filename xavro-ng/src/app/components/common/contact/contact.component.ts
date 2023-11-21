@@ -20,7 +20,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class ContactComponent implements OnInit {
     form: FormGroup;
     successMessageText: string = `Thank you for contacting us! We've received your message and our team will get back to you shortly.`;
-    errorMessageText: string = `Oops! Something went wrong. Please try again later.`;
+    errorMessageText: string = `Please fill out all required fields.`
     messageText: string;
     showMessage: boolean;
     success: boolean;
