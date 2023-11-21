@@ -4,8 +4,8 @@
 
 export const environment = {
     production: false,
-    CONTACT_US_ENDPOINT: 'https://syp7w71ax8.execute-api.us-west-2.amazonaws.com/prod/ContactUs',
-    API_KEY: 'HBoeWTuLDH7S85F2XAo259lf17kZqrkL1JTfyPs5',
+    CONTACT_US_ENDPOINT: 'https://lxsok696pj.execute-api.us-east-1.amazonaws.com/prod/ContactUs',
+    API_KEY: 'RGuo90JOC26WGQJ4tNFmD1wOV7PqPe9S7xSSNQ4I',
 };
 
 /*

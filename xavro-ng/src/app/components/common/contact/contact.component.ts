@@ -30,17 +30,10 @@ export class ContactComponent implements OnInit {
 
     onSubmit() {
         const formValue: Contact = this.form.value;
-        const formData = new FormData();
-        formData.append('name', formValue.name);
-        formData.append('email', formValue.email);
-        formData.append('description', formValue.description);
-        formData.append('number', formValue.number);
-        formData.append('subject', formValue.subject);
-        formData.append('message', formValue.message);
         const headers = new Headers();
         headers.append('Content-Type', 'Content-Type: application/json');
         headers.append('X-API-Key', environment.API_KEY);
-        this.contactUsService.create<any>(formData, headers).subscribe((response: any) => {
+        this.contactUsService.create<any>(formValue, headers).subscribe((response: any) => {
             console.log(`response: ${JSON.stringify(response)}`);
             if (response) {
                 this.form.reset();
@@ -63,7 +56,6 @@ export class ContactComponent implements OnInit {
 type Contact = {
     name: string;
     email: string;
-    description: string;
     number: string;
     subject: string;
     message: string;
